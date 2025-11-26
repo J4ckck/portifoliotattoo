@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+/*colocar paleta de cores aqui:
+.color1 { #1c0b2b };
+.color2 { #301c41 };
+.color3 { #413b6b };
+.color4 { #5c65c0 };
+.color5 { #6f95ff };
+
+ device breakpoints
+     mobile 600 px 
+     tablet 768 px
+     desktop 992 px
+     smart_tv 1200 px
+*/
+
+*{
+    margin:0;
+    padding: 0;
+    /* calcular a borda em relação ao tamanho*/
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* definir o tamanho da tela sempre forçamdo o não extender a tela */
+
+html{
+    height: 100vh;
+}
+
+/* definição do tamanho da tela */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #1c0b2b, #e7bfa5);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-image:url("../fundo.index.jpeg");
+}
+
+header {
+    background-color: #1c0b2b00;
+    margin-top: 3px;
+    border-radius: 7px 7px 0px 0px;
+    width: 90vw;
+    margin: auto;
+}
+
+header>h1 {
+    text-align: center;
+    color: #ffffff;
+    padding: 3px;
+    text-shadow: #413b6b 1px 1px 10px;
+    margin-top: 17px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+}
+
+#burguer {
+    background-color: #ffffff00;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+    width: 5vw;
+    border-radius:40%;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: #ffffff77;
+}
+
+.invisible {
+    display: none;
+  }
+
+menu {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+}
+/*menu é equivalente a nav nesse caso*/
+menu>ul{
+    list-style-type: none;
+   }
+
+menu>ul>li>a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #1f1d6900;
+    border-radius: 7px 7px 7px 7px;
+    color: whitesmoke;
+    margin: auto;
+}
+
+menu>ul>li>a:hover {
+    background-color: #ffffff73;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+main {
+    background-color: #413b6b00;
+    width: 90vw;  
+    margin: auto;
+    border-radius: 7px 7px 0px 0px;
+    margin-top: 7px;
+    padding: 3px;
+}
+
+article>h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 17px;
+    color: #ffffff;
+}
+
+article>p {
+    text-align: justify;
+    margin-bottom: 17px;
+    text-indent: 17px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #6f95ff00;
+    color: #ffffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 0px 0px 7px 7px;
+    width: 90vw;
+    padding: 7px;
+    margin: auto;
+}
+
+img {
+    display: auto;
+    margin: auto;
+}
+
+img#mobile {
+    display: block;
+}
+
+img#tablet {
+    display: none;
+}
+
+img#print {
+    display: none;
+}
+
+img#pc {
+    display: none;
+}
+
+img#tv {
+    display: none;
+}
+
+/* tablet 768 992 */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image:url("../fundo.index.jpeg");
+
+    }
+
+    #burguer {
+        display: block;
+        text-align: center;
+    }
+
+
+    menu {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: #21203f00;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f00;
+
+    }
+
+    menu>ul>li>a {
+        display: block;
+        padding: 7px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #21203f00;
+        border-radius: 7px 7px 7px 7px;
+        color: whitesmoke;
+        margin: auto;
+    }
+    
+    menu>ul>li>a:hover {
+        background-color: #ffffff73;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/* pc 992 1200 */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image:url("../fundo.index.jpeg");
+
+    }
+
+    #burguer {
+        display: block;
+        text-align: center;
+    }
+
+
+    menu {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: #21203f00;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f00;
+
+    }
+
+    menu>ul>li>a {
+        display: block;
+        padding: 7px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #21203f00;
+        border-radius: 7px 7px 7px 7px;
+        color: whitesmoke;
+        margin: auto;
+    }
+    
+    menu>ul>li>a:hover {
+        background-color: #ffffff73;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/*  tv 1200 */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image:url("../fundo.index.jpeg");
+
+    }
+
+    #burguer {
+        display: block;
+        text-align: center;
+    }
+
+
+    menu {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: #3b644c00;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #8b8b8b00;
+
+    }
+
+    menu>ul>li>a {
+        display: block;
+        padding: 7px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #21203f00;
+        border-radius: 7px 7px 7px 7px;
+        color: whitesmoke;
+        margin: auto;
+    }
+    
+    menu>ul>li>a:hover {
+        background-color: #ffffff73;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+}
