@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-repeat: repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-image:url("../fundo.index.jpeg");
+}
+
+header {
+    width: 90vw;
+    margin: auto;
+}
+
+header>h1 {
+    text-align: center;
+    color: #ffffff;
+    padding: 3px;
+    margin-top: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+#burguer {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+    width: 5vw;
+    cursor: pointer;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#burguer:hover {
+    background-color: #ffffff77;
+}
+
+menu {
+    color: #ffffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 90vw;
+    list-style-type: none;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+}
+
+menu>ul {
+    list-style-type: none;
+}
+
+menu>ul>li {
+    display: inline-block;
+    background-color: #8b8b8b00;
+
+}
+
+menu>ul>li>a {
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    color: whitesmoke;
+    margin: auto;
+}
+
+menu>ul>li>a:hover {
+    background-color: #ffffff73;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+span>#material-symbols-outlined {
+    font-size: 30px;
+    display: flex;
+}
+
+main {
+    width: 90vw;
+    height: 100%;
+    margin: auto;
+    border-radius: 7px 7px 0px 0px;
+    margin-top: 7px;
+    padding: 30px;
+    text-align: center;
+}
+
+#Botao {
+    /* Estilos para o botão */
+    background-color: #ffffff93;
+    /* Cor de fundo */
+    color: #fffafa;
+    /* Cor do texto */
+    padding: 25px;
+    /* Espaçamento interno */
+    border: none;
+    /* Sem borda */
+    border-radius: 100px;
+    /* Arredondamento das bordas */
+    cursor: pointer;
+    /* Cursor em forma de mão */
+    margin: 3%;
+}
+
+#Botao2 {
+    background-color: #ffffff93;
+    color: #000000;
+    padding: 33px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 3%;
+}
+
+#Botao3 {
+    background-color: #ffffff93;
+    color: #000000;
+    padding: 25px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 3%;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+a:hover {
+    color: #000000;
+}
+
+footer {
+    color: #ffffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+    width: 90vw;
+    padding: 20px;
+    margin: auto;
+}
